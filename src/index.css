@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 16px;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-sm ring-1 ring-stone-200 hover:shadow-md transition-shadow;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold;
+}
+.btn-primary {
+  @apply bg-emerald-600 text-white hover:bg-emerald-700;
+}
+.btn-outline {
+  @apply border border-stone-300 text-stone-700 hover:bg-stone-50;
+}
+
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
